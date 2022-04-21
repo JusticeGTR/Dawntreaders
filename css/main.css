@@ -12,8 +12,8 @@
    ========================================================================== */
 
 html {
-  font-size: 1em;
-  line-height: 1.4;
+    font-size: 1em;
+    line-height: 1.4;
 }
 
 /*
@@ -27,13 +27,13 @@ html {
  */
 
 ::-moz-selection {
-  background: #b3d4fc;
-  text-shadow: none;
+    background: #b3d4fc;
+    text-shadow: none;
 }
 
 ::selection {
-  background: #b3d4fc;
-  text-shadow: none;
+    background: #b3d4fc;
+    text-shadow: none;
 }
 
 /*
@@ -41,12 +41,12 @@ html {
  */
 
 hr {
-  display: block;
-  height: 1px;
-  border: 0;
-  border-top: 1px solid #ccc;
-  margin: 1em 0;
-  padding: 0;
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
 }
 
 /*
@@ -61,7 +61,7 @@ iframe,
 img,
 svg,
 video {
-  vertical-align: middle;
+    vertical-align: middle;
 }
 
 /*
@@ -69,9 +69,9 @@ video {
  */
 
 fieldset {
-  border: 0;
-  margin: 0;
-  padding: 0;
+    border: 0;
+    margin: 0;
+    padding: 0;
 }
 
 /*
@@ -79,7 +79,7 @@ fieldset {
  */
 
 textarea {
-  resize: vertical;
+    resize: vertical;
 }
 
 /* ==========================================================================
@@ -92,7 +92,7 @@ textarea {
 
 .hidden,
 [hidden] {
-  display: none !important;
+    display: none !important;
 }
 
 /*
@@ -105,16 +105,16 @@ textarea {
  */
 
 .sr-only {
-  border: 0;
-  clip: rect(0, 0, 0, 0);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-  /* 1 */
+    border: 0;
+    clip: rect(0, 0, 0, 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    /* 1 */
 }
 
 /*
@@ -125,13 +125,13 @@ textarea {
 
 .sr-only.focusable:active,
 .sr-only.focusable:focus {
-  clip: auto;
-  height: auto;
-  margin: 0;
-  overflow: visible;
-  position: static;
-  white-space: inherit;
-  width: auto;
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    white-space: inherit;
+    width: auto;
 }
 
 /*
@@ -139,7 +139,7 @@ textarea {
  */
 
 .invisible {
-  visibility: hidden;
+    visibility: hidden;
 }
 
 /*
@@ -156,14 +156,13 @@ textarea {
 
 .clearfix::before,
 .clearfix::after {
-  content: " ";
-  display: table;
+    content: " ";
+    display: table;
 }
 
 .clearfix::after {
-  clear: both;
+    clear: both;
 }
-
 
 
 /* ==========================================================================
@@ -173,72 +172,72 @@ textarea {
    ========================================================================== */
 
 @media print {
-  *,
-  *::before,
-  *::after {
-    background: #fff !important;
-    color: #000 !important;
-    /* Black prints faster */
-    box-shadow: none !important;
-    text-shadow: none !important;
-  }
+    *,
+    *::before,
+    *::after {
+        background: #fff !important;
+        color: #000 !important;
+        /* Black prints faster */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
 
-  a,
-  a:visited {
-    text-decoration: underline;
-  }
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
 
-  a[href]::after {
-    content: " (" attr(href) ")";
-  }
+    a[href]::after {
+        content: " (" attr(href) ")";
+    }
 
-  abbr[title]::after {
-    content: " (" attr(title) ")";
-  }
+    abbr[title]::after {
+        content: " (" attr(title) ")";
+    }
 
-  /*
-   * Don't show links that are fragment identifiers,
-   * or use the `javascript:` pseudo protocol
-   */
-  a[href^="#"]::after,
-  a[href^="javascript:"]::after {
-    content: "";
-  }
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+    a[href^="#"]::after,
+    a[href^="javascript:"]::after {
+        content: "";
+    }
 
-  pre {
-    white-space: pre-wrap !important;
-  }
+    pre {
+        white-space: pre-wrap !important;
+    }
 
-  pre,
-  blockquote {
-    border: 1px solid #999;
-    page-break-inside: avoid;
-  }
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
 
-  /*
-   * Printing Tables:
-   * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
-   */
-  thead {
-    display: table-header-group;
-  }
+    /*
+     * Printing Tables:
+     * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+    thead {
+        display: table-header-group;
+    }
 
-  tr,
-  img {
-    page-break-inside: avoid;
-  }
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
 
-  p,
-  h2,
-  h3 {
-    orphans: 3;
-    widows: 3;
-  }
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
 
-  h2,
-  h3 {
-    page-break-after: avoid;
-  }
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
 }
 
 /*===========================
@@ -254,87 +253,103 @@ textarea {
 */
 
 :root {
-  --gold: #c2ad63;
-  --black: #2b2b2b;
-  --lightgrey: #d9d9d9;
-  --darkgrey: rgba(30, 30, 30, 0.8);
-  --white: #fff;
+    --gold: #c2ad63;
+    --black: #2b2b2b;
+    --lightgrey: #d9d9d9;
+    --darkgrey: rgba(30, 30, 30, 0.8);
+    --white: #fff;
 }
 
 * {
-  font-family: "Roboto", Tahoma;
-  color: var(--white);
+    font-family: "Roboto", Tahoma;
+    color: var(--white);
 }
 
 html {
-  background-color: var(--black);
+    background-color: var(--black);
 }
 
 h1 {
-  font-weight: 500;
-  margin: 0;
-  padding: 0;
-  background-color: transparent;
+    font-weight: 500;
+    font-size: 3.5em;
+    background-color: transparent;
+    color: var(--gold);
+    margin: 0;
+    padding: 0;
 }
 
-h2,h3,h4,h5 {
-  font-weight: 400;
-  background-color: transparent;
+h2 {
+    font-size: 3em;
+}
+
+h2, h3, h4, h5 {
+    font-weight: 400;
+    background-color: transparent;
 }
 
 header {
-  display: none;
+    display: none;
 }
 
 p {
-  background-color: transparent;
+    background-color: transparent;
+    font-size: 1.25em;
 }
 
 .btn {
-  background-color: transparent;
-  color: var(--gold);
-  height: 4.5rem;
-  width: 12.5rem;
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 21px;
-  border-radius: 5px;
-  text-transform: uppercase;
+    background-color: transparent;
+    color: var(--gold);
+    height: 4.5rem;
+    width: 12.5rem;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 21px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    border: none;
 }
 
 .btn:hover {
-  background-color: var(--gold);
-  color: var(--black);
+    background-color: var(--gold);
+    color: var(--black);
 }
 
 .primary {
-  background: #C2AD63;
-  color: var(--black)
+    background: #C2AD63;
+    color: var(--black)
 }
 
 .primary:hover {
-  background-color: var(--black);
-  color: var(--gold);
+    background-color: var(--black);
+    color: var(--gold);
 }
 
 /* Hero Section*/
 .section-hero {
-  position: relative;
-  height: 100vh;
-  background-image: url("/images/hero-main.png");
-  background-position: center;
-  background-size: cover;
-  display: flex;
-  margin: auto;
+    position: relative;
+    height: 100vh;
+    background-image: url("/images/hero-main.png");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    margin: auto;
 }
 
-.hero-container{
-  background-color: var(--darkgrey);
-  position: absolute;
-  top: 25vh;
-  display: flex;
-  flex-direction: column;
-  padding: 25px 15px;
+.hero-container {
+    position: absolute;
+    background-color: var(--darkgrey);
+    top: 25vh;
+    display: flex;
+    flex-direction: column;
+    padding: 25% 25px;
+}
+
+.hero-container p {
+    color: var(--lightgrey);
+}
+
+.hero-title{
+    display: flex;
 }
 
 /* ==========================================================================
@@ -342,12 +357,12 @@ p {
    ========================================================================== */
 
 @media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
+    /* Style adjustments for viewports that meet the condition */
 }
 
 @media print,
 (-webkit-min-device-pixel-ratio: 1.25),
 (min-resolution: 1.25dppx),
 (min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */
+    /* Style adjustments for high resolution devices */
 }
