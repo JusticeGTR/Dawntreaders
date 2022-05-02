@@ -273,13 +273,16 @@ h1 {
     font-weight: 500;
     font-size: 3.5em;
     background-color: transparent;
-    color: var(--gold);
     margin: 0;
     padding: 0;
 }
 
 h2 {
     font-size: 3em;
+}
+
+h1, h2 {
+    color: var(--gold);
 }
 
 h2, h3, h4, h5 {
@@ -324,6 +327,10 @@ p {
     color: var(--gold);
 }
 
+.section {
+    padding: 25px;
+}
+
 /* Hero Section*/
 .section-hero {
     position: relative;
@@ -333,6 +340,7 @@ p {
     background-size: cover;
     display: flex;
     margin: auto;
+    padding: inherit;
 }
 
 .hero-container {
@@ -350,6 +358,22 @@ p {
 
 .hero-title{
     display: flex;
+    flex-direction:row;
+}
+
+.hero-title h1{
+    font-size: 2.6rem;
+    align-self: center;
+}
+
+.hero-title img {
+    height: 65px;
+    width: 65px;
+}
+
+.section-about img {
+    height: auto;
+    width: 100%;
 }
 
 /* ==========================================================================
