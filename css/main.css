@@ -278,7 +278,7 @@ h1 {
 }
 
 h2 {
-    font-size: 3em;
+    font-size: 2.75em;
 }
 
 h1, h2 {
@@ -331,7 +331,10 @@ p {
     padding: 25px;
 }
 
-/* Hero Section*/
+/* Hero Section */
+
+/* TODO: Hero section needs to be refactored, it's sloppy */
+
 .section-hero {
     position: relative;
     height: 100vh;
@@ -371,10 +374,59 @@ p {
     width: 65px;
 }
 
+/* Weekly About Section*/
+
 .section-about img {
     height: auto;
     width: 100%;
 }
+
+/* Weekly Meeting Section*/
+
+.section-weekly {
+    position: relative;
+    height: 100vh;
+    background-image: url("/images/hero-weekly.png");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding: inherit;
+}
+
+.section-weekly-container {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--darkgrey);
+    margin: auto;
+    padding: 25px;
+}
+
+/* Weekly Meeting Section*/
+
+/* TODO: Make the background responsive/fit screen and get rid of stylization for rules */
+
+.section-rules {
+    position: relative;
+    height: 100vh;
+    background-image: url("/images/hero-rules.png");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding: inherit;
+}
+
+.section-rules-container {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--darkgrey);
+    margin: auto;
+    padding: 25px;
+}
+
 
 /* ==========================================================================
    Media Queries
