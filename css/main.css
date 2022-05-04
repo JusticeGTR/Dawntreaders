@@ -299,6 +299,11 @@ p {
     font-size: 1.25em;
 }
 
+summary {
+    list-style:none;
+    cursor: pointer;
+}
+
 .btn {
     background-color: transparent;
     color: var(--gold);
@@ -310,6 +315,7 @@ p {
     border-radius: 5px;
     text-transform: uppercase;
     border: none;
+    cursor: pointer;
 }
 
 .btn:hover {
@@ -333,8 +339,6 @@ p {
 
 /* Hero Section */
 
-/* TODO: Hero section needs to be refactored, it's sloppy */
-
 .section-hero {
     position: relative;
     height: 100vh;
@@ -347,12 +351,14 @@ p {
 }
 
 .hero-container {
-    position: absolute;
     background-color: var(--darkgrey);
-    top: 25vh;
     display: flex;
     flex-direction: column;
-    padding: 25% 25px;
+    margin: auto;
+    height: 50%;
+    justify-content: center;
+    align-self: center;
+    padding: 25px;
 }
 
 .hero-container p {
@@ -409,7 +415,7 @@ p {
 
 .section-rules {
     position: relative;
-    height: 100vh;
+    height: 90vh;
     background-image: url("/images/hero-rules.png");
     background-position: center;
     background-size: cover;
@@ -425,6 +431,8 @@ p {
     background-color: var(--darkgrey);
     margin: auto;
     padding: 25px;
+    width: 80%;
+    height: auto;
 }
 
 
