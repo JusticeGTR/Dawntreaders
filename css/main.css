@@ -304,6 +304,11 @@ summary {
     cursor: pointer;
 }
 
+details {
+    max-width: 95ch;
+    margin-left: 15px;
+}
+
 .btn {
     background-color: transparent;
     color: var(--gold);
@@ -334,7 +339,7 @@ summary {
 }
 
 .section {
-    padding: 25px;
+    padding: 1.5625rem;
 }
 
 /* Hero Section */
@@ -348,6 +353,7 @@ summary {
     display: flex;
     margin: auto;
     padding: inherit;
+    width: 100vw;
 }
 
 .hero-container {
@@ -358,7 +364,7 @@ summary {
     height: 50%;
     justify-content: center;
     align-self: center;
-    padding: 25px;
+    padding: 1.5625rem;
 }
 
 .hero-container p {
@@ -406,16 +412,14 @@ summary {
     flex-direction: column;
     background-color: var(--darkgrey);
     margin: auto;
-    padding: 25px;
+    padding: 1.5625rem;
 }
 
 /* Weekly Meeting Section*/
 
-/* TODO: Make the background responsive/fit screen and get rid of stylization for rules */
-
 .section-rules {
     position: relative;
-    height: 90vh;
+    min-height: 100vh;
     background-image: url("/images/hero-rules.png");
     background-position: center;
     background-size: cover;
@@ -430,8 +434,7 @@ summary {
     flex-direction: column;
     background-color: var(--darkgrey);
     margin: auto;
-    padding: 25px;
-    width: 80%;
+    padding: 1.5625rem;
     height: auto;
 }
 
@@ -449,4 +452,56 @@ summary {
 (min-resolution: 1.25dppx),
 (min-resolution: 120dpi) {
     /* Style adjustments for high resolution devices */
+}
+
+@media only screen and (min-width: 768px){
+    .hero-container,
+    .section-weekly-container,
+    .section-rules-container{
+        margin: auto 1.5625rem;
+
+    }
+
+
+    .hero-container{
+        width: 45%;
+    }
+
+}
+
+@media only screen and (min-width: 1024px){
+    .hero-container,
+    .section-weekly-container,
+    .section-rules-container{
+        margin: auto 3rem;
+    }
+
+    .hero-container{
+        width: 35%;
+    }
+
+    .section-about {
+        display: flex;
+        /*flex-direction: row;*/
+        /*flex-wrap: wrap;*/
+        padding: 4.5rem;
+    }
+
+    .section-about-image {
+        padding-left: 25px;
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+}
+
+@media only screen and (min-width: 1013px) and (max-width: 1300px) {
+    .section-about{
+        flex-direction: column;
+    }
+
+    .section-about-image{
+        padding-left: initial;
+    }
+
 }
